@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.osmo.androidapp_1.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/ruskahaavat"
+    style="@style/Widget.AppCompat.Button"
+    android:id="@+id/relativeLayout"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_a_nice_day"
+        android:background="#f4e115"
+        android:textColor="#e21e1e"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+        android:padding="1dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="101sp"
+        android:id="@+id/datePicker"
+        android:layout_alignParentStart="false"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/textView2"
+        android:calendarTextColor="#85efe3"
+        android:padding="1dp" />
+
+    <AnalogClock
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/analogClock"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignParentStart="false"
+        android:visibility="visible"
+        android:focusable="false"
+        android:background="#c7f0bc"
+        android:nestedScrollingEnabled="false" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/listViewOma"
+        android:background="#ffffff"
+        android:choiceMode="singleChoice"
+        android:layout_alignParentStart="false"
+        android:textAlignment="center"
+        android:textFilterEnabled="false"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false"
+        android:layout_below="@+id/analogClock"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="false" />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextId"
+        android:background="#ffffff"
+        android:text="@string/edit_message"
+        android:layout_below="@+id/listViewOma"
+        android:layout_alignStart="@+id/listViewOma"
+        android:scrollIndicators="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_button"
+        android:id="@+id/buttonId"
+        android:background="#df3030"
+        android:textColor="#090909"
+        android:onClick="sendMessage"
+        android:layout_alignTop="@+id/editTextId"
+        android:layout_toEndOf="@+id/editTextId" />
+
+</RelativeLayout>

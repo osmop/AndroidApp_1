@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AndroidApp_1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    //---------------- omat lisäykset alla
+    <string name="have_a_nice_day">Have a Nice Day !</string>
+
+    <string-array name="res_list_array_oma">
+        <item>"resource-item1_oma"</item>
+        <item>"resource-item2_oma"</item>
+        <item>"resource-item3_oma"</item>
+        <item>"resource-item4_oma"</item>
+    </string-array>
+
+    <string name="edit_message">Give text</string>
+    <string name="send_button">Send Button</string>
+
+
+</resources>

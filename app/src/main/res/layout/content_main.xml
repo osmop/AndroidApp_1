@@ -82,4 +82,15 @@
         android:layout_alignTop="@+id/editTextId"
         android:layout_toEndOf="@+id/editTextId" />
 
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/textClock"
+        android:visibility="visible"
+        android:background="#c7f0bc"
+        android:layout_below="@+id/buttonId"
+        android:layout_alignParentStart="true"
+        android:textColor="#090909"
+        android:textSize="20dp" />
+
 </RelativeLayout>
